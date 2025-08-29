@@ -1,0 +1,83 @@
+/* src/components/Header/Header.css */
+
+.header-container {
+  display: flex; /* ESSENCIAL: Ativa o Flexbox */
+  justify-content: space-between; /* ESSENCIAL: Distribui os itens com espaço entre eles */
+  align-items: center; /* ESSENCIAL: Alinha os itens verticalmente no centro */
+  padding: 1rem 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%; /* Garante que o header ocupe toda a largura */
+}
+
+/* --- Logo --- */
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  color: #8A2BE2; /* Um roxo bonito */
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+}
+
+/* --- Navegação Principal (Links no meio) --- */
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex; /* Mantém os links na mesma linha */
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #8A2BE2;
+}
+
+
+/* --- Área de Login --- */
+.login-area {
+  /* Não precisa de estilo específico se o header-container já faz o trabalho */
+}
+
+.login-button {
+  padding: 0.6rem 1.5rem;
+  background-color: #8A2BE2;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #7b24c6;
+  color: #fff;
+  transform: scale(1.05);
+}
